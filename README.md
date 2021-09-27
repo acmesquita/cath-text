@@ -9,7 +9,7 @@ Durante o dia-a-dia, preciso fazer várias anotações rápidas e uma alternativ
 ## Requisitos
 
 - [ ]  Ao abrir uma nova aba do navegador, deve ser exibido um bloco do notas com todas as anotações anteriores
-- [ ]  Essas informações podem ser pesistida somente no navegador
+- [x]  Essas informações podem ser pesistida somente no navegador
 
 ## Referências
 
