@@ -1,0 +1,17 @@
+{
+  "name": "Cath Text",
+  "icons": {
+    "16": "",
+    "48": "",
+    "128": ""
+  },
+  "description": "A notes in new tab page for Google Chrome.",
+  "version": "1.0",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "cathtext.html"
+  },
+  "manifest_version": 2,
+  "author": "Catharina Mesquita",
+  "homepage_url": ""
+}
