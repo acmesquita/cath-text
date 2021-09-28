@@ -3,8 +3,12 @@ class Editor {
     this.quill = new Quill('#editor', {
       theme: 'bubble',
     });
+    this.addSaveListener()
+    this.queryContentLocal()
+  }
+
+  addSaveListener() {
     this.quill.on('text-change', this.saveInLocal);
-    queryContentLocal()
   }
 
   queryContentLocal() {
