@@ -72,10 +72,10 @@ class Links {
 
     const btn = document.createElement('button')
     btn.innerHTML = "X"
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', function () {
       this.removeLink(link)
       this.showLinks()
-    })
+    }.bind(this))
     child.appendChild(btn)
 
     return child
@@ -86,14 +86,10 @@ class Links {
   }
 
   showLinks() {
-    if (this.#linksEl.innerHTML == "") {
-      this.#links.forEach(linkItem => {
-        this.showLink(linkItem)
-      });
-    }
-    if (this.#links.length == 0) {
-      this.#linksEl.innerHTML = ""
-    }
+    this.#linksEl.innerHTML = ""
+    this.#links.forEach(linkItem => {
+      this.showLink(linkItem)
+    });
   }
 }
 
