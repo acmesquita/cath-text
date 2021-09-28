@@ -2,7 +2,8 @@
 
 Extensão do Google Chrome para servir de bloco de notas em uma nova aba.
 
-![Screenshot from 2021-09-27 18-06-28](https://user-images.githubusercontent.com/15862643/134985311-5a163885-971b-43f5-8e37-044d4cd517b3.png)
+![cath-text](https://user-images.githubusercontent.com/15862643/135115119-7947e228-5b0f-4be1-950c-b1b27752ae48.gif)
+
 
 ## Problema
 
@@ -12,6 +13,7 @@ Durante o dia-a-dia, preciso fazer várias anotações rápidas e uma alternativ
 
 - [x]  Ao abrir uma nova aba do navegador, deve ser exibido um bloco do notas com todas as anotações anteriores
 - [x]  Essas informações podem ser pesistida somente no navegador
+- [x]  Deve possuir a possibilidade de colocar links para acesso fácil acima do texto.
 
 ## Referências
 
