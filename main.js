@@ -8,7 +8,7 @@ class Editor {
   }
 
   addSaveListener() {
-    this.quill.on('text-change', this.saveInLocal);
+    this.quill.on('text-change', this.saveInLocal.bind(this));
   }
 
   queryContentLocal() {
