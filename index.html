@@ -14,8 +14,21 @@
 
   <!-- Create the editor container -->
   <div id="container">
+    <div id="tools">
+      <button id="btnLinks">+</button>
+      <form id="form" class="hide">
+        <div class="field">
+          <input type="text" name="title" placeholder="Title">
+        </div>
+        <div class="field">
+          <input type="text" name="href" placeholder="Link">
+        </div>
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+    <div id="links"></div>
     <div id="editor"></div>
-    <footer>Criado por Catharina Mesquita</footer>
+    <footer>Criado com ❤️ por <a href="https://github.com/acmesquita">Catharina Mesquita</a></footer>
   </div>
 
   <!-- Initialize Quill editor -->

@@ -5,6 +5,19 @@ body {
   color: aliceblue;
 }
 
+footer > a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -12,6 +25,118 @@ body {
   justify-content: center;
   gap: 2rem;
   padding-top: 3rem;
+  position: relative;
+}
+
+#btnLinks {
+  border: none;
+  cursor: pointer;
+  background-color: aliceblue;
+  padding: 1rem 1.25rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#btnLinks:hover {
+  border-radius: 1.5rem;
+}
+
+#btnLinks:hover::after {
+  content: 'Link';
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#links span.link {
+  background-color: aliceblue;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#links > span.link > a {
+  color: rgb(52, 52, 56);
+  text-decoration: none;
+}
+
+#links span.link:hover > a {
+  text-decoration: underline;
+}
+
+#links span.link:hover > button {
+  display: block;
+}
+
+#links > span.link > button {
+  display: none;
+  background: rgb(129, 129, 133);
+  border-radius: 50%;
+  color: aliceblue;
+  border: none;
+  font-size: 0.63rem;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  height: 1rem;
+  width: 1rem
+}
+
+#tools {
+  float: left;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+}
+
+#form {
+  /* display: flex; */
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#form > div.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+#form > div.field > input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+
+#form > button {
+  padding: 0.5rem;
+  width: 225px;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  background-color: rgb(228, 228, 228);
+}
+
+#form > button:hover {
+  background-color: rgb(191, 223, 206);
+  color: #333
 }
 
 #editor {
