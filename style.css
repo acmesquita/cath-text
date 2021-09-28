@@ -1,31 +1,57 @@
-@keyframes turnUpBrightness {
-  from {
-    background-color: hsla(0, 0%, 0%, 1)
-  }
-
-  to {
-    background-color: hsla(0, 0%, 20%, 1)
-  }
-}
-
 body {
-  background-color: hsla(0, 0%, 20%, 1);
+  background-color: rgb(52, 52, 56);
   animation-name: turnUpBrightness;
   animation-duration: 3s;
   color: aliceblue;
-  margin-top: 50px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 3rem;
 }
 
 #editor {
-  padding: 50px;
-  min-height: 78vh;
+  padding: 3rem;
+  min-height: 85vh;
   background-color: aliceblue;
   color: black;
-  width: 45%;
-  border-radius: 16px;
+  border-radius: 0.25rem;
   margin: 0 auto;
   outline: 0;
-
-  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media only screen and (min-width: 1020px) {
+  /* styles for browsers larger than 960px; */
+  #editor {
+    width: 45%;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+  #editor {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+  #editor {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+  #editor {
+    width: 90%;
+    font-size: 1.5rem;
+  }
 }
