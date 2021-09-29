@@ -151,33 +151,19 @@ footer > a {
   outline: 0;
 }
 
-@media only screen and (min-width: 1020px) {
+@media (min-width: 1020px) {
   /* styles for browsers larger than 960px; */
   #editor {
-    width: 45%;
+    width: 50%;
     font-size: 1rem;
   }
 }
-@media only screen and (max-device-width: 480px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-  #editor {
-    width: 90%;
-    font-size: 1.5rem;
-  }
-}
+
 /* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+@media (min-width: 360px) and (max-width: 1200px) {
   /* For portrait layouts only */
   #editor {
     width: 90%;
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
-  #editor {
-    width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
