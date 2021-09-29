@@ -6,7 +6,7 @@
     "100": "icons8-notes-100.png"
   },
   "description": "A notes in new tab page for Google Chrome.",
-  "version": "1.0",
+  "version": "1.1",
   "incognito": "split",
   "chrome_url_overrides": {
     "newtab": "index.html"
