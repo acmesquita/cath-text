@@ -13,6 +13,9 @@
   },
   "background": {
     "scripts": [
+      "editor.js",
+      "link.js",
+      "tools-events.js",
       "main.js"
     ]
   },
