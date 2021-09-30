@@ -13,10 +13,10 @@
   },
   "background": {
     "scripts": [
-      "editor.js",
-      "link.js",
-      "tools-events.js",
-      "main.js"
+      "src/javascript/editor.js",
+      "src/javascript/link.js",
+      "src/javascript/tools-events.js",
+      "src/javascript/main.js"
     ]
   },
   "content_security_policy": "script-src 'self' https://*.quilljs.com; object-src 'self'",
