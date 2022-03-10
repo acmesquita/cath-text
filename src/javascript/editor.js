@@ -1,8 +1,6 @@
 class Editor {
-  constructor() {
-    this.quill = new Quill('#editor', {
-      theme: 'bubble',
-    });
+  constructor(quill) {
+    this.quill = quill
     this.addSaveListener()
     this.queryContentLocal()
   }
